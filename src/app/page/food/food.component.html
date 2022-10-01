@@ -1,0 +1,23 @@
+<div class="row">
+  <aside class="aside col-3">
+    <ul>
+      <li *ngFor="let m of data">
+        {{m.name}}
+      </li>
+    </ul>
+  </aside>
+  <div class="content col">
+    <div class="row">
+      <div class="col-3" *ngFor="let f of foods">
+        <div class="card mt-2 mb-2">
+          <img src="{{f.image}}">
+          <div class="card-body">
+            <h4>{{f.name}}</h4>
+            <p>Shake</p>
+            <p><span class="text-danger">{{f.price}}</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

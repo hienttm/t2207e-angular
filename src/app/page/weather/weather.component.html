@@ -1,0 +1,10 @@
+<section class="weather-forecast">
+  <div class="container row">
+    <div class="card col-3 box-weather" *ngFor="let x of lists">
+      <h4>{{x.dt_txt}}</h4>
+      <h2>{{x.main.temp}}<sup>o</sup>C</h2>
+      <p>{{x.weather[0].description}}</p>
+      <img src="https://openweathermap.org/img/wn/{{x.weather[0].icon}}@2x.png">
+    </div>
+  </div>
+</section>

@@ -1,0 +1,42 @@
+<div class="card">
+  <div class="card-body">
+    <h1>{{student.name}}</h1>
+    <p class="text-danger">{{student.address}}</p>
+    <p *ngIf="student.age>=18" class="text-info">{{student.age}}</p>
+    <p *ngIf="student.age<18" class="text-warning">{{student.age}}</p>
+
+<!-- <p *ngFor="let xyz of arrayNumber;let i=index">-->
+    <p *ngFor="let xyz of arrayNumber;">
+<!-- như vòng lặp FOR: i=0;i<n;i++-->
+
+      {{xyz}} - Xin chao cac ban
+      <!--      xyz chính là arrayNumber phần tử thú i-->
+    </p>
+
+    <ul>
+      <li *ngFor="let s of stringArray">
+        {{s}}
+      </li>
+    </ul>
+<!--    vòng lặp để liệt kê danh sáng chuỗi; s là biến khai báo dùng tạm trong vòng lặp-->
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let st of ls">
+        <td>{{st.id}}</td>
+        <td>{{st.name}}</td>
+        <td>{{st.age}}</td>
+        <td>{{st.address}}</td>
+     </tr>
+    </tbody>
+  </table>
+</div>

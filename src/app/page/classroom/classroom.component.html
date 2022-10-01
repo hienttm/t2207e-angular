@@ -1,0 +1,11 @@
+<div class="classroom">
+  <h1>{{clName}}</h1>
+  <p><input type="text" [(ngModel)]="clName"></p>
+  <h2>Room: B12</h2>
+  <h2>Sĩ số:{{numberStudent}}</h2>
+  <button (click)="upNumber()" type="button">Tăng</button>
+</div>
+<app-student [stName]="studentName"></app-student>
+<app-student [stName]="studentName1"></app-student>
+<app-student [stName]="studentName2"></app-student>
+<app-student [stName]="studentName3"></app-student>
