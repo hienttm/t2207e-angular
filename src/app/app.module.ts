@@ -15,6 +15,7 @@ import {FoodComponent} from "./page/food/food.component";
 import {HttpClientModule} from "@angular/common/http";
 import {WeatherComponent} from "./page/weather/weather.component";
 import {DemoExamComponent} from "./page/demo-exam/demo-exam.component";
+import {ExamComponent} from "./page/exam/exam.component";
 
 
 //khai báo các page trong website:
@@ -27,6 +28,7 @@ const appRoutes: Routes =[
   {path:'food',component:FoodComponent},
   {path:'weather',component:WeatherComponent},
   {path:'demo-exam',component:DemoExamComponent},
+  {path:'exam',component:ExamComponent},
 
 
 ]
@@ -34,7 +36,7 @@ const appRoutes: Routes =[
 @NgModule({
   declarations: [
     AppComponent, StudentComponent, ClassroomComponent, HomeComponent, LoginComponent, AboutUsComponent, AboutUsComponent,
-    ContactUsComponent,RegisterComponent,FoodComponent,WeatherComponent, DemoExamComponent
+    ContactUsComponent,RegisterComponent,FoodComponent,WeatherComponent, DemoExamComponent, ExamComponent
 
 
   ],

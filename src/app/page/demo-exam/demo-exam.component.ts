@@ -12,4 +12,5 @@ export class DemoExamComponent {
     {name: "Nguyen Thi Thuy", title:"sale", date:"20/11/1998",city:"HaNoi", address:"8 Ton That Tung", phone:'0392259898',img:"anh_cv3"},
     {name: "Nguyen Thi Hue", title:"sale", date:"20/11/1998",city:"HaNoi", address:"8 Ton That Tung", phone:'0392259898',img:"anh_cv4"},
   ]
+
 }
